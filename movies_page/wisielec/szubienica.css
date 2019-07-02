@@ -1,0 +1,94 @@
+body
+{
+	background-color: #000000;
+	font-family: 'Ubuntu Mono', monospace;
+}
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width:1350px;
+}
+
+#nun
+{
+	text-align: center;
+}
+
+#slide
+{
+	width: 800px;
+	text-align: left;
+	float:left;
+	min-height: 280px;
+}
+
+#abecadlo
+{
+	float:left;
+	width: 550px;
+	display:block;
+}
+
+.letter
+{
+	font-size: 40px;
+	color:#ffffff;
+	float:left;
+	border: 3px solid gray;
+	padding: 7px;
+	margin: 7px;
+	float:left;	
+	border-radius: 15px;
+	width: 40px;
+	text-align: center;
+}
+
+.letter:hover
+{
+	text-decoration: none;
+	color: #200344;
+	cursor: pointer;
+	border: 3px solid blue;
+	
+}
+
+#password
+{
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.reset
+{
+	font-size: 40px;
+	color: red;
+	text-align: center;
+}
+
+.reset:hover
+{
+	cursor: pointer;
+	color: white;
+}
+
+#return
+{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	font-size: 30px;
+}
+
+a
+{
+	text-decoration: none;
+	color: red;
+}
+
+a:hover
+{
+	font-weight: 700;
+}

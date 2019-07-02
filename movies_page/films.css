@@ -1,0 +1,198 @@
+body
+{
+	background-color: #373128;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color:white;
+}
+
+#container
+{
+	margin-left:auto;
+	margin-right:auto;
+	width: 1300px;
+}
+
+#topp
+{
+	width: 1280px;
+	background-color: #444490;
+	margin-top: 20px;
+	font-size: 38px;	
+	padding: 10px;	
+	position: sticky;
+	top: 20px;
+	z-index: 100;
+}
+
+#logo
+{
+	text-align: right;
+	float:left;		
+	width: 850px;
+
+}
+
+#timer
+{
+	float:left;
+	text-align: right;
+	width: 420px;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+#menu
+{
+	height: 70px;
+	font-size: 20px;
+	background-color: black;	
+	margin-top: 10px;
+	text-align: center;
+	position: sticky;
+	top: 105px;
+	z-index: 100;
+}
+
+#menu > ul
+{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#menu > ul > li 
+{
+	float:left;
+	height: 35px;
+	width: 180px;
+	border-right: 1px solid red
+}
+
+#menu > ul > li:first-child
+{
+	border-left: 1px solid red
+}
+
+#menu > ul > li > ul
+{
+	list-style-type: none;
+	display: block;
+	padding: 0;
+	margin-top: 5px;
+	display: none;
+}
+
+#menu > ul > li:hover > ul
+{
+	display: block;
+}
+
+#menu > ul > li > ul > li
+{
+	background-color: #000000;
+	border-top: 1px solid red;
+}
+
+.films
+{
+	text-align:center;
+}
+
+a.link
+{
+	color: #ffffff;
+	text-decoration: none;
+	display:block;
+}
+
+a.filmslink
+{
+	color: #ffffff;
+	text-decoration: none;
+	display:block;
+}
+
+a.link:hover
+{
+	color: blue;
+}
+
+a.filmslink:hover
+{
+	color: #ffffff;
+	background-color: #123468;
+}
+
+#topbar
+{
+	clear:both;
+	margin-top: 10px;
+	background-color:#A93456;
+	height:130px;
+	padding: 10px;
+}
+
+#topbarL
+{
+	float:left;
+	width: 170px;
+	border-right: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+#topbarR
+{
+	float:left;
+	text-align:justify;
+	width: 1058px;
+	padding: 10px;
+}
+
+#barr
+{
+	background-color: red;
+	height: 1320px;
+	clear:both;
+	margin-top: 15px;	
+	padding: 10px;
+}
+
+#sidebar
+{
+   float:left;
+   width: 170px;
+   padding: 10px;
+}
+
+#images
+{
+	float:left;
+	text-align:center;
+	width: 310px;
+	padding: 10px;
+	z-index: 100;
+}
+
+#content
+{
+    float:left;
+    text-align:justify;
+	width: 570px;
+	padding: 10px;
+	border-left: 1px solid black;
+}
+
+#footer
+{
+   clear:both;
+   text-align:center;
+}	
+
+#scrollex
+{
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+}

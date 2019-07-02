@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+
+<head>
+<title> Poznaj najlepsze filmy!</title>
+<meta charset = "utf-8"/>
+<meta name = "description" content = "Ta strona poświęcona jest filmom"/>
+<meta name = "keywords" content = "Filmy, top, świat, kinematografia"/>
+<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1"/>
+
+<link rel = "stylesheet" href = "linux.css" type = "text/css" />
+<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+<script src = "https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+<script type = "text/javascript" src = "functions.js"></script>
+<script src = "jquery.scrollTo.min.js"></script>
+
+<script>
+	jQuery(function($)
+	{
+		
+		$('#link1').click(function(){$.scrollTo($('#footer'), 2000);});
+		$('#scrollex').click(function(){$.scrollTo($('#container'), 2000);});
+	}
+	);
+	
+	$(window).scroll(function()
+	{
+		if($(this).scrollTop()>100) $('#scrollex').fadeIn();
+		else $('#scrollex').fadeOut();
+	}
+	);
+</script>
+
+</head>
+
+<body onload = "starter()">
+
+<div id = "container">
+
+	<div id = "scrollex"> <img src = "images/superman.png" width = "100"/> </div>
+	
+	<div id = "topp">
+		<div id = "logo">
+			<i class = "icon-movie"></i>
+				Poznaj najlepsze filmy!
+		</div>
+		
+		<div id = "sciesnij">
+			<div id = "sciesnij1">
+				Email:
+				<input type = "text" id = "emailtext"/>
+			</div>
+			<div id = "sciesnij2">
+				Hasło:
+				<input type = "password" id = "passwordtext"/>
+				<input type = "submit" value = "Zaloguj" onclick = "action()"/>
+			</div>
+		</div>
+		
+		<div style="clear: both;"></div>
+	</div>
+	
+	<div id = "menu">
+		<ul>
+			<li> <a href = "linux.html" class = "link" >Strona główna</a> </li>
+			<li> <a href = "javascript:;" class = "link" >Spis filmów</a>
+				<ul>
+					<li><a href = "lalaland.html" class = "link">Lalaland</a></li>
+					<li><a href = "javascript:;" class = "link">Ojciec Chrzestny</a></li>
+					<li><a href = "javascript:;" class = "link">Król Lew</a></li>
+					<li><a href = "javascript:;" class = "link">Władca Pierścieni</a></li>
+					<li><a href = "javascript:;" class = "link">Matrix</a></li>
+				</ul>
+			</li>
+			<li><a href = "javascript:;" class = "link" >Ciekawostki</a></li>
+			<li><a id = "link1" href = "javascript:;" class = "link" >O stronie</a></li>
+			<li><a href = "javascript:;" class = "link" >Polecane</a>
+				<ul>
+					<li><a href = "wisielec/szubienica.html" class = "link">Zagraj w Wisielca!</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div id = "topbar">
+	
+		<div id = "topbarL">
+		<div class = "films">
+		<i class = "icon-videocam"></i>
+		</div>
+		</div>
+		<div id = "topbarR">
+		<font size = "20">Cześć!</font> </br>
+		Jeśli chcesz dowiedzieć się wszystkiego o najlepszych filmach w historii, to dobrze trafiłeś! Znajdziesz tutaj tytuły, opisy tych filmów i wiele innych informacji. 
+		</div>
+	
+	</div>
+<div id = "barr">
+	
+	<div id = "sidebar">
+	<div class = "films"><a href = "lalaland.html" class = "filmslink">La La Land</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Władca Pierścieni</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Matrix</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Król Lew</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Ojciec Chrzestny</a></div>
+	</div>
+	
+	<div id = "content">
+		<img src = "images/director.jpg"/>
+	</div>
+	
+</div>
+
+	<div id = "footer">
+		<div id = "foot">
+			Łukasz Szumilas &copy 2018 Wszelkie prawa zastrzeżone
+		</div>
+		<div id = "timer"></div>
+		<div style="clear: both;"></div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+
+<head>
+<title> Poznaj najlepsze filmy!</title>
+<meta charset = "utf-8"/>
+<meta name = "description" content = "Ta strona poświęcona jest filmom"/>
+<meta name = "keywords" content = "Filmy, top, świat, kinematografia"/>
+<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1"/>
+
+<link rel = "stylesheet" href = "films.css" type = "text/css" />
+<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+
+<script src = "https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+<script type = "text/javascript" src = "functions.js"></script>
+<script src = "jquery.scrollTo.min.js"></script>
+
+<script>
+	jQuery(function($)
+	{
+		$('#link1').click(function(){$.scrollTo($('#footer'), 2000);});
+		$('#scrollex').click(function(){$.scrollTo($('#container'), 2000);});
+	}
+	);
+	
+	$(window).scroll(function()
+	{
+		if($(this).scrollTop()>200) $('#scrollex').fadeIn();
+		else $('#scrollex').fadeOut();
+	}
+	);
+</script>
+
+</head>
+
+<body onload = "starter()">
+
+<div id = "container">
+
+	<div id = "scrollex"> <img src = "images/superman.png" width = "100"/> </div>
+
+	<div id = "topp">
+		<div id = "logo">
+			<i class = "icon-movie"></i>
+				Poznaj najlepsze filmy!
+		</div>
+		
+		<div id = "timer"></div>
+		<div style="clear: both;"></div>
+	</div>
+	
+	<div id = "menu">
+		<ul>
+			<li> <a href = "linux.html" class = "link" >Strona główna</a> </li>
+			<li> <a href = "javascript:;" class = "link" >Spis filmów</a>
+				<ul>
+					<li><a href = "lalaland.html" class = "link">Lalaland</a></li>
+					<li><a href = "javascript:;" class = "link">Ojciec Chrzestny</a></li>
+					<li><a href = "javascript:;" class = "link">Król Lew</a></li>
+					<li><a href = "javascript:;" class = "link">Władca Pierścieni</a></li>
+					<li><a href = "javascript:;" class = "link">Matrix</a></li>
+				</ul>
+			</li>
+			<li><a href = "javascript:;" class = "link" >Ciekawostki</a></li>
+			<li><a id = "link1" href = "javascript:;" class = "link" >O stronie</a></li>
+			<li><a href = "javascript:;" class = "link" >Polecane</a>
+				<ul>
+					<li><a href = "wisielec/szubienica.html" class = "link">Zagraj w Wisielca!</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div id = "topbar">
+	
+		<div id = "topbarL">
+		<div class = "films">
+		<i class = "icon-videocam"></i>
+		</div>
+		</div>
+		<div id = "topbarR">
+		<font size = "20">Cześć!</font> </br>
+		Jeśli chcesz dowiedzieć się wszystkiego o najlepszych filmach w historii, to dobrze trafiłeś! Znajdziesz tutaj tytuły, opisy tych filmów i wiele innych informacji. 
+		</div>
+	
+	</div>
+<div id = "barr">
+	
+	<div id = "sidebar">
+	<div class = "films"><a href = "lalaland.html" class = "filmslink">La La Land</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Władca Pierścieni</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Matrix</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink">Król Lew</a></div>
+	<div class = "films"><a href = "javascript:;" class = "filmslink link">Ojciec Chrzestny</a></div>
+	</div>
+	
+	<div id = "content">
+	<p>Akcja filmu dzieje się w Los Angeles. Pianista jazzowy Sebastian (Ryan Gosling) i początkująca aktorka Mia (Emma Stone) starają się osiągnąć sukces w swoich dziedzinach. Ich losy krzyżują się wielokrotnie. Mimo początkowych animozji schodzą się ze sobą i wspólnie starają się zrealizować swoje marzenia. 
+	Chazelle miał znaczne problemy ze znalezieniem wytwórni, która zgodziłaby się wyprodukować jego film. Producenci, z którymi się kontaktował, nie byli przekonani do pomysłu musicalu jazzowego oraz wątpili w sukces finansowy. Wśród zmian zaproponowanych przez Focus Features znalazły się zmiana gatunku muzycznego na rock, uproszczenie sceny otwierającej film oraz zmiana zakończenia na bardziej szczęśliwe dla głównych postaci. Chazelle nie zgodził się na tak diametralne zmiany i zawiesił projekt. Jego późniejszy film Whiplash wymagał mniejszego budżetu i był mniej ryzykowaną inwestycją dla producentów. Po uzyskaniu przychylnych recenzji oraz licznych nagród Chazelle wznowił działania, by przenieść La La Land w fazę produkcji. W 2015 r. skontaktowały się z nim Summit Entertainment oraz Black Label Media, których przedstawiciele zgodzili się sfinansować film bez ingerencji w scenariusz. </p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut semper dolor. Duis placerat felis eu purus feugiat, id pharetra diam blandit. Nam vitae justo aliquam, tempus ipsum at, interdum orci. Sed vitae purus mattis diam pellentesque elementum. Proin tincidunt lacinia aliquam. Donec laoreet venenatis sollicitudin. Nulla lobortis tincidunt blandit.</p>
+
+	<p>Phasellus imperdiet arcu et metus venenatis dictum. Praesent tempor, purus sit amet sodales aliquet, quam enim imperdiet leo, et finibus nisi elit eget elit. In hac habitasse platea dictumst. Sed id suscipit augue. Fusce pellentesque eros a lectus ornare, ac suscipit metus laoreet. Nulla pharetra ante sed eros consequat ultrices. Vivamus arcu urna, mattis in fermentum id, ornare non lectus.</p>
+
+	<p>Nulla augue lacus, vestibulum ac orci ac, condimentum tempor dui. Nulla facilisi. Ut eleifend diam eu sagittis imperdiet. Fusce et orci tincidunt, mollis elit a, fringilla justo. Vestibulum pharetra rhoncus interdum. Pellentesque hendrerit metus non rutrum convallis. Ut efficitur erat semper tellus lacinia posuere.</p>
+
+	<p>Vestibulum aliquam ante sit amet nisi mollis vestibulum. Cras suscipit erat sit amet porta placerat. In a justo eu purus egestas elementum at non mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis laoreet eleifend ultricies. Quisque pharetra urna leo, sit amet gravida metus fringilla in. Duis consequat metus lorem, eget malesuada felis volutpat in. Quisque eu viverra dui. Aliquam in ex mauris. Duis sagittis sollicitudin ante, quis aliquam quam pulvinar et. Integer dignissim sodales sapien, et suscipit diam convallis nec. In egestas odio eget ligula aliquam, quis aliquam massa pretium. Integer et suscipit dolor.</p>
+
+	<p>Maecenas diam erat, rhoncus semper justo vel, consequat laoreet nisi. Phasellus in libero non orci vulputate rutrum. Integer id luctus nibh. Etiam id efficitur arcu, hendrerit consectetur justo. Donec eleifend metus eu massa pellentesque, vel lobortis mauris tempus. Integer vestibulum augue ac risus cursus sollicitudin. Integer at convallis purus. Phasellus dignissim, eros quis interdum rutrum, risus urna posuere neque, id placerat lectus lorem mollis nulla. Etiam malesuada elit tellus, ultricies auctor purus ultricies in. Vivamus id gravida justo. Duis quis porta elit, vel vulputate leo. Cras id lobortis mi.</p>
+	</div>
+	
+	<div id = "images"></div>
+	
+	</div>
+</div>
+
+	<div id = "footer">
+		Łukasz Szumilas &copy 2018 Wszelkie prawa zastrzeżone
+	</div>
+	
+</div>
+
+</body>
+
+</html>
